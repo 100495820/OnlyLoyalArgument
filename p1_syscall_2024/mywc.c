@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     file = fopen(argv[1], "r");
 
     if (file == NULL) {
-          printf("Cannot open file.\n");
+          printf("Can't open file.\n");
           return -1;
     }
 
