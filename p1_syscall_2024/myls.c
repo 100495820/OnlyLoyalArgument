@@ -17,13 +17,16 @@ int main(int argc, char *argv[])
         if (getcwd(path, sizeof(path))!=NULL) {
           dir = opendir(path);
         }
-
+        else{
+          printf("Error: could not open current directory\n");
+          return -1;
+        }
     } else {
         dir = opendir(argv[1]);
     }
 
     if (dir == NULL) {
-        printf("Error opening directory");
+        printf("Error: opening directory");
         return -1;
     }
 
