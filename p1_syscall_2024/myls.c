@@ -5,7 +5,7 @@
 #include <sys/types.h>	// Header file for system calls opendir, readdir y closedir
 #include <dirent.h>
 #include <string.h>
-#include <linux/limits.h>
+#include <limits.h>
 
 
 int main(int argc, char *argv[])
