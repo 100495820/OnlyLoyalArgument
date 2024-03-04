@@ -33,10 +33,10 @@ int main(int argc, char *argv[])
   }
   closedir(dir);
   if (found == 1) {
-    printf("%s is in directory %s\n", argv[2], argv[1]);
+    printf("File %s is in directory %s\n", argv[2], argv[1]);
   }
   else {
-    printf("%s is not in directory %s\n", argv[2], argv[1]);
+    printf("File %s is not in directory %s\n", argv[2], argv[1]);
     }
 
 	return 0;
