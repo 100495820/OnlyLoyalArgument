@@ -10,32 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-    struct dirent *entry;
-    DIR *dir;
-    char path[PATH_MAX];
 
-    if (argv[1] == NULL) {
-        if (getcwd(path, sizeof(path))!=NULL) {
-          dir = opendir(path);
-        }
-        else{
-          printf("Error: could not open current directory\n");
-          return -1;
-        }
-    } else {
-        dir = opendir(argv[1]);
-    }
 
-    if (dir == NULL) {
-        printf("Error: opening directory");
-        return -1;
-    }
-
-    while ((entry = readdir(dir)) != NULL) {
-        printf("%s\n", entry->d_name);
-    }
-
-    closedir(dir);
-
-    return 0;
+  return 0;
 }
