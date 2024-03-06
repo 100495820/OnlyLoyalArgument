@@ -31,7 +31,10 @@ int main(int argc, char *argv[])
       found = 1;
     }
   }
-  closedir(dir);
+  if (closedir(dir)<0){
+    printf("Error: closing directory");
+    return -1;
+  }
   if (found == 1) {
     printf("File %s is in directory %s\n", argv[2], argv[1]);
   }
