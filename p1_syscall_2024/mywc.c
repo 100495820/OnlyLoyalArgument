@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-#define BUF_SIZE 1024
+#define BUF_SIZE 1
 
 int main(int argc, char *argv[])
 {
