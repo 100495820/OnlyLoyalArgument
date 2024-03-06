@@ -4,7 +4,8 @@
 #include <fcntl.h> 
 #include <unistd.h> 
 #include <stdlib.h> 
-#define BUF_SIZE 1 // Define the buffer size as 1
+#define BUF_SIZE 1 
+// Define the buffer size as 1
 
 int main(int argc, char *argv[]) 
 {
