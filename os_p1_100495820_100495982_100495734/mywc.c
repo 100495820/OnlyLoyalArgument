@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
       char buffer[BUF_SIZE]; // Declaring a character array named buffer with a size of BUF_SIZE = 1
 
 
-    file = open(argv[1], O_RDONLY); // Open the file in read-only mode (file is the file descriptor)
+    file = open(argv[1], O_RDONLY); // Open the file in read-only mode
 
     if (file < 0) { // Check if the file can be opened
           printf("Can't open file.\n");

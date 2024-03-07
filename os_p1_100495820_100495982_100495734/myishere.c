@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     printf("Too few arguments\n");
     return -1;
   }
-  else if (argc>3){
+  else if (argc>3){  // Check if there are more than expected arguments
     printf("Too many arguments\n");
     return -1;
   }
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
     printf("Error: closing directory\n");
     return -1;
   }
-  if (found == 1) { // Check if the file was found in the directory
+  if (found == 1) { // Check if the file was found in the directory when found = 1
     printf("File %s is in directory %s\n", argv[2], argv[1]);
   }
   else {
