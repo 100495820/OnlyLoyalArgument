@@ -14,7 +14,10 @@ int main(int argc, char *argv[])
     printf("Too few arguments\n");
     return -1;
   }
-
+  else if (argc>3){
+    printf("Too many arguments\n");
+    return -1;
+  }
   DIR *dir;
   struct dirent *entry;
   int found = 0;

@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
   dir = opendir(argv[1]);
 
   if (dir == NULL){
-    printf("Error: opening directory");
+    printf("Error: opening directory\n");
     return -1;
   }
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
     }
   }
   if (closedir(dir)<0){
-    printf("Error: closing directory");
+    printf("Error: closing directory\n");
     return -1;
   }
   if (found == 1) {

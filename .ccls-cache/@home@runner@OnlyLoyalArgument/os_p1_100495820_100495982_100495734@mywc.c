@@ -27,10 +27,6 @@ int main(int argc, char *argv[])
       int inaword = 0;
       char buffer[BUF_SIZE]; // Declaring a character array named buffer with a size of BUF_SIZE = 1
 
-    if (argv[1]==NULL) { // Check if the second argument is null
-      printf("No file entered\n"); 
-      return -1; // Return -1 as an error code
-    }
 
     file = open(argv[1], O_RDONLY); // Open the file in read-only mode
 
