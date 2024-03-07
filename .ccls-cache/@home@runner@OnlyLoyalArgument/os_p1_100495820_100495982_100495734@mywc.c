@@ -16,6 +16,10 @@ int main(int argc, char *argv[])
     return -1; // Return -1 as an error code
 
   }
+  else if (argc > 3) // Check if the number of arguments is greater than 3
+  {
+    printf("Too many arguments\n");
+  }
       int file; 
       int lines = 0; 
       int words = 0; 
