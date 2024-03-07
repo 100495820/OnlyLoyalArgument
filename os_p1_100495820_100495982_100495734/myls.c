@@ -13,7 +13,10 @@ int main(int argc, char *argv[])
     struct dirent *entry;// Pointer to a dirent 
     DIR *dir;			// Pointer to a directory 
     char path[PATH_MAX];// Character array to store the current working directory path
-
+    if (argc > 2){
+      printf("Too many arguments\n");
+      return -1;
+    }
     if (argv[1] == NULL) { // If argument is empty we will select current directory
         if (getcwd(path, PATH_MAX)!=NULL) { // Get the current working directory
           dir = opendir(path); // Open the current working directory
