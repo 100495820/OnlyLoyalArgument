@@ -20,15 +20,15 @@ int main(int argc, char *argv[])
   {
     printf("Too many arguments\n");
   }
-      int file; 
+      int file; // Variable for file descriptor
       int lines = 0; 
       int words = 0; 
       int bytes = 0; 
-      int inaword = 0;
+      int inaword = 0; // Variable to keep track if currently reading a word or not
       char buffer[BUF_SIZE]; // Declaring a character array named buffer with a size of BUF_SIZE = 1
 
 
-    file = open(argv[1], O_RDONLY); // Open the file in read-only mode
+    file = open(argv[1], O_RDONLY); // Open the file in read-only mode (file is the file descriptor)
 
     if (file < 0) { // Check if the file can be opened
           printf("Can't open file.\n");
